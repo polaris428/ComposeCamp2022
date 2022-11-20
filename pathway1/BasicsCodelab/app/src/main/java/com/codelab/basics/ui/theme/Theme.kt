@@ -5,6 +5,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.BlendMode.Companion.Color
 
 private val DarkColorPalette = darkColors(
     primary = Purple200,
@@ -45,3 +46,15 @@ fun BasicsCodelabTheme(
         content = content
     )
 }
+private val LightColorScheme = lightColors(
+    surface = Blue,
+    onSurface = androidx.compose.ui.graphics.Color.White,
+    primary = LightBlue,
+    onPrimary = Navy
+)
+private val DarkColorScheme = darkColors(
+    surface = Blue,
+    onSurface = Navy,
+    primary = Navy,
+    onPrimary = Chartreuse
+)
